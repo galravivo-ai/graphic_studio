@@ -1024,7 +1024,7 @@ async function generateImage() {
       body: JSON.stringify({
         input: {
           prompt: currentPrompt.substring(0, 2000),
-          aspect_ratio: currentBrief.format === '1024x1792' ? '9:16' : currentBrief.format === '1792x1024' ? '16:9' : '1:1',
+          aspect_ratio: brief.format === '1024x1792' ? '9:16' : brief.format === '1792x1024' ? '16:9' : '1:1',
           output_format: 'jpg',
           output_quality: 90
         }
